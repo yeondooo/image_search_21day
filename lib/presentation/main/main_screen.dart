@@ -44,6 +44,7 @@ class _MainScreenState extends State<MainScreen> {
           ),
           Expanded(
             child: GridView.builder(
+              itemCount: state.photos.length,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 mainAxisSpacing: 4,
